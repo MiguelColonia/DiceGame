@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio id="audio-perdio" src="/audios/game_over.wav"></audio>
+    <audio id="audio-dices" src="/audios/dice_roll.wav"></audio>
+    <div class="turn-Begins">
+      <p></p>
+      <button onclick="whoBegins()">Back to play</button>
+    </div>
+    <div class="lost-turn">
+      <p></p>
+    </div>
+    <h1>Couch Games Wtf</h1>
+    <table border="1px" class="table-score">
+      <thead>
+        <tr>
+          <th>Players and Score</th>
+        </tr>
+      </thead>
+      <tbody id="table-score">
+        <tr class="usuario">
+          <th>User</th>
+          <td id="score-usuario">0</td>
+        </tr>
+        <tr class="maquina">
+          <th>Computer</th>
+          <td id="score-maquina">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="main-cont-dice">
+      <div class="contains-Dice">
+      
+      </div>
+    </div>
+
+   
+    <button class="button-Throw" onclick="gameBegin()">
+      Roll dice
+    </button>
+    <button class="button-Stop" onclick="iStop()" disabled>
+      Stop
+    </button>
+    <div class="see-dice-select">
+      <h3>Selected dice</h3>
+      <div>
+        
+      </div>
+    </div>
+    <script src="../js/game.js"></script>
+  </body>
+</html>

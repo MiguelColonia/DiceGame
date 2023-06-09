@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('/imgs/relieve.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cont-form-start-play{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imgs/annunaki.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0000009c;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.input-name{
+    font-size: 20px;
+}
+
+.cont-buttons-dices{
+    display: flex;
+    gap: 5px;
+}
+
+.cont-buttons-dices > button{
+    width: 100%;
+    cursor: pointer;
+}
+
+.cont-buttons-dices select{ 
+    width: 100%;
+    
+}
+
+.start-game{
+    width: 100%;
+    padding: 8px;
+}
+
+.msg-error{
+    color: red;
+    display: none;
+}
+
+.contains-Dice{
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+    height: 140px;
+    background-color: #0000009e;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contains-Dice > div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+
+.contiene-numero-1{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dado{
+    padding: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.capa-dado{
+    width: 100%;
+    height: 100%;
+    background-color: #60424200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.dado div{
+    
+}
+
+.bloqueo-click-maquina{
+    background-color: #ff000000;
+    position: absolute;
+    width: 100% !important;
+    z-index: 2;
+    border: none !important;
+}
+
+.contiene-numero-1 > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.contiene-numero-2{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+
+.contiene-circulo > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.contiene-circulo-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contiene-circulo-1 > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.contiene-circulo-2{
+    display: flex;
+    justify-content: center;
+}
+
+.contiene-circulo-2 > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.contiene-circulo-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contiene-circulo-3 > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.contiene-circulo-4{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contiene-circulo-4 > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.button-Throw{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.lost-turn{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.lost-turn p{
+    background-color: rgb(255, 68, 68);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.button-Stop{
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.turn-Begins{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.turn-Begins p{
+    background-color: rgb(68, 255, 96);
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+}
+
+.turn-Begins button{
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.cont-input-players div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-input-players{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.msg-error-input{
+    color: red; 
+    font-size: small;
+    display: none;
+}
+
+.msg-error-dados{
+    color: red; 
+    font-size: small;
+    display: none;
+}
+
+.see-dice-select{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.see-dice-select h3{
+    text-align: center;
+}
+
+.see-dice-select > div{
+    height: 60px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dado-min{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.table-score{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+.table-score th,td{
+    border: none;
+}
+
+.table-score td{
+    background-color: white;
+    text-align: center;
+}
+
+.main-cont-dice{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media( max-width: 420px ){
+
+    /*Esto entra en accion,cuando estamos hasta máximo 420px*/
+  .contains-Dice{
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 0;
+  }
+
+}
+

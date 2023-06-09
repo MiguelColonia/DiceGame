@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cont-form-start-play">
+      
+      <form class="form" onsubmit="getDataPlay(event)">
+        <div>
+          <img src="/imgs/nuevologo.png" alt="">
+        </div>
+        <div class="cont-input-players">
+          
+          <div>
+            <label for="">Name</label>
+            <p class="msg-error-input">The name is obligatory</p> <!--Está roto-->
+            <input class="input-name" type="text" name="name" placeholder="Name" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="">Number of players</label>
+          <select name="quantyPlayers" id="" onchange="createInputs(event)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          </div>
+        </div>
+          
+            <div>
+              <label for="">Number of points</label>
+              <select name="quantyScore" id="">
+                <option value="6000">6000</option>
+                <option value="10000">10000</option>
+              </select>
+            </div>
+          
+      
+          <p class="msg-error-dados">Choose the number of dice</p>
+          <label for="">Number of dice</label>
+          <div class="cont-buttons-dices">
+              <button class="button-dices-6" type="button" onclick="cantidadDados(event, 6)">6</button>
+              <button class="button-dices-5" type="button" onclick="cantidadDados(event, 5)">5</button>
+          </div>
+
+        
+        <button class="start-game">Start Game</button>
+      </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
